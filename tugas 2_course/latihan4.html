@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External JS Example</title>
+</head>
+<body>
+
+    <h1>Check the console for output</h1>
+
+    <script>
+        console.log("connected with external JS file");
+
+        // Loop and log numbers 0 to 4
+        for (let n = 0; n < 5; n++) {
+            console.log(n);
+        }
+
+        // String and variable example
+        var name = "putri";
+        console.log(name + " is 20 yrs old");
+        console.log(`${name} is 20 yrs old`); // Template literal example
+
+        // Object example
+        var obj = {
+            name: "putri",
+            roll_no: 10,
+            sing() {
+                console.log(`${this.name} sings`);
+            }
+        };
+
+        // Access object properties
+        console.log(obj.name);
+        obj.sing();
+        console.log(obj["roll_no"]);
+    </script>
+
+</body>
+</html>
